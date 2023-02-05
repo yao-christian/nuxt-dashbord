@@ -1,0 +1,85 @@
+.form-input {
+    position: relative;
+    margin-bottom: calc(1em * 1.5);
+    width: 100%;
+
+    label {
+        display: block;
+        margin-bottom: 4px;
+        width: 100%;
+        color: #000;
+        font-weight: 500;
+    }
+
+    label.required::after {
+        display: inline-block;
+        margin-left: 4px;
+        color: $error-color;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: "*";
+    }
+
+    .help-message {
+        position: absolute;
+        bottom: calc(-1.5 * 1em);
+        left: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    &.has-error input,
+    &.has-error textarea {
+        background-color: $error-bg-color;
+        color: $error-color;
+
+        &:focus {
+            border-color: $error-color;
+        }
+    }
+
+    &.has-error .help-message {
+        color: $error-color;
+    }
+
+    &.success input,
+    &.success textarea {
+        background-color: $success-bg-color;
+        color: $success-color;
+
+        &:focus {
+            border-color: $success-color;
+        }
+    }
+
+    &.success .help-message {
+        color: $success-color;
+    }
+}
+
+$cd-txt: #6300a0;
+$cd-box: #fff;
+
+.container {
+    background-color: rgb(237, 246, 247);
+}
+
+.form {
+    &-group {
+        & input {
+            // border: 2px solid transparent;
+            // // // border-radius: 100rem;
+            // // color: $cd-txt;
+            // // font-family: 'Montserrat', sans-serif;
+            // // font-size: 2.5rem;
+            // // outline: none;
+            // // padding: 0.5rem 1.5rem;
+            // // width: 100%;
+
+            // &:focus {
+            //     border: 2px solid $cd-txt;
+            // }
+        }
+    }
+}

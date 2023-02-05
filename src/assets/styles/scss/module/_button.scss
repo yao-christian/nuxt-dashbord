@@ -1,0 +1,164 @@
+$white-color: #fff;
+
+%btn {
+    padding: 0.30rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.2s;
+
+    .loading {
+        animation: loading 0.5s linear 0s infinite;
+    }
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-light {
+    @extend %btn;
+    background: $white-color;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+
+/* btn primary */
+.btn-primary {
+    @extend %btn;
+    background: $primary-color;
+    color: $white-color;
+
+    &:hover {
+        background: darken($primary-color, 10%);
+        color: #fff;
+    }
+
+    &--disabled {
+        opacity: 0.8;
+        cursor: auto;
+
+        &:hover {
+            background: $primary-color;
+        }
+    }
+}
+
+/* btn secondary */
+.btn-secondary {
+    @extend %btn;
+    background: #E29E06;
+    color: $white-color;
+
+    &:hover {
+        background: darken(#E29E06, 10%);
+    }
+
+    &--disabled {
+        opacity: 0.8;
+        cursor: auto;
+    }
+}
+
+/* btn success */
+.btn-success {
+    @extend %btn;
+    background: $success-color;
+    color: $white-color;
+
+    &:hover {
+        background: darken($success-color, 10%);
+    }
+
+    &--disabled {
+        opacity: 0.8;
+        cursor: auto;
+    }
+}
+
+/* btn danger */
+.btn-danger {
+    @extend %btn;
+    background: $danger-color;
+    color: $white-color;
+
+    &:hover {
+        background: darken($danger-color, 10%);
+    }
+
+    &--disabled {
+        opacity: 0.8;
+        cursor: auto;
+    }
+}
+
+/* btn dark */
+.btn-dark {
+    @extend %btn;
+    background: $dark-color;
+    color: $white-color;
+
+    &:hover {
+        background: darken($dark-color, 10%);
+    }
+
+    &--disabled {
+        opacity: 0.8;
+        cursor: auto;
+    }
+}
+
+.btn-primary-link {
+    color: $primary-color;
+    font-size: $font-size-smaller;
+    font-weight: 600;
+
+    &:hover {
+        color: darken($primary-color, 10%);
+    }
+}
+
+.btn-secondary-link {
+    color: $secondary-color;
+    font-size: $font-size-smaller;
+    font-weight: 600;
+
+    &:hover {
+        color: darken($secondary-color, 10%);
+    }
+}
+
+.btn-danger-link {
+    color: $danger-color;
+    font-size: $font-size-smaller;
+    font-weight: 600;
+
+    &:hover {
+        color: darken($danger-color, 10%);
+    }
+}
+
+.btn-success-link {
+    color: $success-color;
+    font-size: $font-size-smaller;
+    font-weight: 600;
+
+    &:hover {
+        color: darken($success-color, 10%);
+    }
+}

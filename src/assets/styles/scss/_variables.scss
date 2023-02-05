@@ -1,0 +1,95 @@
+/* Colors */
+$primary-color: #56A8F2;
+$secondary-color: #3E2992;
+$success-color: #13c56b;
+$info-color: #50c3e6;
+$warning-color: #e8bc52;
+$danger-color: #ed5e5e;
+$error-color: #f23648;
+$light-color: #f3f6f9;
+$dark-color: #363d48;
+$blue-color: #6691e7;
+$blue-light-color: #ddefff;
+$indigo-color: #405189;
+$purple-color: #865ce2;
+$pink-color: #f672a7;
+$red-color: #ed5e5e;
+$orange-color: #f1963b;
+$yellow-color: #e8bc52;
+$green-color: #13c56b;
+$teal-color: #02a8b5;
+$cyan-color: #50c3e6;
+$white-color: #fff;
+$gray-color: #878a99;
+$gray-dark-color: #363d48;
+$gray-100-color: #f3f6f9;
+$gray-200-color: #eff2f7;
+$gray-300-color: #e9ebec;
+$gray-400-color: #ced4da;
+$gray-500-color: #adb5bd;
+$gray-600-color: #878a99;
+$gray-700-color: #495057;
+$gray-800-color: #363d48;
+$gray-900-color: #212529;
+
+/* Fonts */
+// $base-font-family: "Caladea", sans-serif;
+$base-font-family: "Arial", sans-serif;
+
+/* Bg colors */
+$error-bg-color: #fddfe2;
+$success-bg-color: #e0eee4;
+
+$text-link-color: $secondary-color;
+
+$border: 1px solid $gray-300-color;
+$border-color: $white-color;
+
+$base-line-height: 1.75;
+
+$z-index-top: 99;
+
+$box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
+
+/* Font size*/
+$base-font-size: 1.2rem;
+$font-size-smaller: 0.833rem;
+
+$sidebar-width : 300px;
+$header-height: 70px;
+$navbar-height: 60px;
+$footer-height: 50px;
+
+/* Vertical menu */
+$vertical-menu-bg: #fff;
+$vertical-menu-item-color: #6d7080;
+$vertical-menu-item-hover-color: #6691e7;
+$vertical-menu-item-active-color: #6691e7;
+$vertical-menu-sub-item-color: #7c7f90;
+$vertical-menu-sub-item-hover-color: #6691e7;
+$vertical-menu-sub-item-active-color: #6691e7;
+$vertical-menu-title-color: #919da9;
+
+/* Header */
+$header-bg: #fff;
+$header-item-color: #e9ecef;
+$header-bg-dark: #38454a;
+$header-item-color-dark: #9ea9ad;
+$topbar-search-bg: #f3f3f9;
+$topbar-user-bg: #f3f3f9;
+$topbar-user-bg-dark: #455358;
+
+/* Footer */
+$footer-bg: #fff;
+$footer-color: #98a6ad;
+
+/* Footer */
+$topnav-bg: #fff;
+$topnav-item-color: #6d7080;
+$topnav-item-color-active: #6691e7;
+
+$heading-color: #495057;
+$link-color: #6691e7;
+$link-hover-color: #6691e7;
+$border-color: #e9ebec;
+$card-bg-custom: #fff;

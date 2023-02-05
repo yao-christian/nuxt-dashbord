@@ -1,0 +1,22 @@
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+    border-bottom: $border;
+}
+
+.info-container-d-col {
+    margin-bottom: 15px;
+    border-bottom: $border;
+}
+
+.info-label {
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.inf0-content {
+    font-size: 14px;
+}

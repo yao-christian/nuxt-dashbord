@@ -1,0 +1,128 @@
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $gray-400-color;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: #495057;
+    background: #F3F3F9;
+}
+
+/* Remove default margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* List elements styles */
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link elements styles */
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Images styles */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Form elemets styles */
+input,
+textarea,
+select {
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+
+    background-color: #f2f5f7;
+
+    border: 1px solid $white-color;
+    // border-radius: 5px;
+
+    font: inherit;
+
+    outline: none;
+    color: $primary-color;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:focus {
+        border-color: $primary-color;
+    }
+
+    &:not(:focus):invalid {
+        border-color: $error-color;
+        color: $error-color
+    }
+}
+
+/* Fieldset styles */
+fieldset {
+    border: $border;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* Legend Styles */
+legend {
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Headers Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #495057;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,81 @@
+@import '~/assets/styles/scss/mixins/mixin';
+
+.grid {
+    display: grid;
+}
+
+.grid-align-items-center {
+    align-items: center;
+}
+
+@for $i from 1 through 12 {
+    .grid-area-#{$i} {
+        grid-area: grid-area-#{$i};
+    }
+}
+
+@for $i from 1 through 10 {
+    .grid-column-gap-#{$i*10} {
+        column-gap: #{$i*10}px;
+    }
+}
+
+@for $i from 1 through 5 {
+    .grid-row-gap-#{$i*10} {
+        row-gap: #{$i*10}px;
+    }
+}
+
+.grid-template-col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-template-col-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-template-col-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-template-col-5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-template-col-6 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.grid-template-rows-2 {
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-template-rows-3 {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-template-rows-4 {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.grid-template-rows-5 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-template-rows-6 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+// Form fields
+.form-grid {
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 10px;
+
+    @include md-down {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,37 @@
+.tabs {
+    margin: 400px;
+    margin: 0 auto;
+
+    &-header {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        border-bottom: $border;
+        margin-bottom: 1rem;
+    }
+
+    &-header-title {
+        display: block;
+        padding: 0.3rem 1rem;
+        margin-bottom: -1px;
+        border: 1px solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        font-weight: 500;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $primary-color;
+        }
+    }
+}
+
+.isSelected {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.tab-content {
+    padding-top: 0.5rem;
+}

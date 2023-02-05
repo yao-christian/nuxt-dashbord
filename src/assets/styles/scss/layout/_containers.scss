@@ -1,0 +1,47 @@
+@import '~/assets/styles/scss/mixins/mixin';
+
+.container {
+    background-color: inherit;
+    padding: 0 1rem;
+    display: block;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.default-layout-page-container {
+    display: block;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/* dashbord-layout */
+%dashbord-container {
+    display: block;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+
+    @include md-down {
+        padding: 0 1rem;
+    }
+}
+
+.dashbord-layout-page-container {
+    @extend %dashbord-container;
+    margin: 20px auto
+}
+
+.dashbord-layout-header-content-container {
+    @extend %dashbord-container;
+}
+
+.dashbord-layout-nabbar-content-container {
+    @extend %dashbord-container;
+}
+
+.dashbord-layout-footer-content-container {
+    @extend %dashbord-container;
+}
+
+/* dashbord-layout */

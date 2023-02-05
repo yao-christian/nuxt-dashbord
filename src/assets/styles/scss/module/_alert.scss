@@ -1,0 +1,22 @@
+%alert {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.alert-danger {
+    @extend %alert;
+    background-color: $error-bg-color;
+    color: $danger-color;
+}
+
+.alert-success {
+    @extend %alert;
+    background-color: $success-bg-color;
+    color: $success-color;
+}
+
+.alert-info {
+    @extend %alert;
+    background-color: $info-color;
+    color: #fff;
+}

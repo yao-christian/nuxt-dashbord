@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build --dotenv ./environments/.prod.env",
+    "dev": "nuxt dev --dotenv ./environments/.dev.env",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview --dotenv ./environments/.preprod.env",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@pinia/nuxt": "^0.4.4",
+    "less": "^4.1.3",
+    "nuxt": "^3.0.0",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "ant-design-vue": "^3.2.13",
+    "pinia": "^2.0.24"
+  }
+}
